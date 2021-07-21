@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+	int a,b;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	
+	printf("%d \n", a * (b%10)); //10으로 나눠서 나머지가 첫번째 자리수
+	printf("%d \n", a * (b/10 % 10)); //38 -> 8 
+	printf("%d \n", a * (b/100)); 
+	printf("%d", a * b);
+	return 0;
+}
